@@ -223,6 +223,7 @@
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
         margin-bottom: 5%;
+        cursor:pointer;
     }
     
     .pre {
