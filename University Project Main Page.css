@@ -34,7 +34,7 @@
     .othersearchbutton {
         margin-top: 1%;
         background-color:goldenrod;
-        color: black;
+        color: rgb(0, 3, 69);
         height: 27px;
         width: 40%;
         display: flex;
@@ -42,7 +42,7 @@
         text-align: center;
         align-items: center;
         font-family: 'Open Sans', sans-serif;
-        font-weight:700;
+        font-weight:500;
         border: none;
         font-size: 15px;
         border-top-left-radius: 5px;
