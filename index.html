@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+
+    <title>
+        Search by Subject
+    </title>
+
+    <link rel="icon" href="Logo.jfif">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="University Project Main Page.css" />
+
+    <script src="Uniproject.js"></script>
+</head>
+
+<body style="background-color:rgb(0, 3, 69);">
+
+
+
+    <div class="Welcomemessage">
+        <p>Search by University</p>
+    </div>
+
+    <div class=search-box>
+        <input id="searchbar" onkeyup="search_university()" type="text" name="search" placeholder="  Search by University...">
+    </div>
+
+    <div class="othersearch">
+        <button class="othersearchbutton" onclick="location = 'SubjectSearch.html'">Search Subjects</button>
+    </div>
+
+
+
+    <div class="universitylist">
+        <ol id='list'>
+            <a class="university" href="Cambridgecourses.html" >Cambridge</a> 
+            <a class="university" href="Edinburghcourses.html" >Edinburgh</a> 
+        </ol>
+    </div>
+
+
+</body>
+
+</html>

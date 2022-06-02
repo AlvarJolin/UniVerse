@@ -1,0 +1,380 @@
+<link rel="stylesheet" href="SubjectSearch.css" />
+
+
+
+<html>   
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+        <style>
+            h1 {text-align: center;}
+            
+        </style>
+
+        <title>
+            Search by Subject
+        </title>
+
+        <link rel="icon" href="Logo.jfif">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+<script src="Uniproject.js"></script>
+    </head>
+
+
+
+        
+        <body style="background-color:rgb(0, 3, 69);">
+
+
+
+                <div class="Welcomemessage">
+                    <p>Search by Subject</p>
+                </div>
+
+                <div class=search-box>
+                    <input id="searchbar" onkeyup="search_subject()" type="text"
+                        name="search" placeholder="  Search by Subject...">
+                </div>
+
+                <div class="othersearch">
+                    <button class="othersearchbutton" onclick="location = 'index.html'">Search Universities</button>
+                </div>
+
+
+
+                <div class="listofsubjects">
+                    <ol id='list'>
+                        <div class="tablediv">
+                            <table style="width:100%">
+                                <tr>
+                                    <td style="text-align:center"><b>Course</b></td>
+                                    <td style="text-align:center">Tuition Fees (Int'l)</td>
+                                    <td style="text-align:center">Requirements</td>
+                                    <td style="text-align:center">University</td>
+                                    <td style="text-align:center">Resources</td>
+                                </tr>
+                                <tr class="subject">
+                                    <td><b>Anglo-Saxon, Norse, and Celtic</b></td>
+                                    <td style="text-align: center">£23,340</td>
+                                    <td style="text-align: center">Math AA, 40-42 points IB, with 776 at HL</td>
+                                    <td style="text-align: center">Cambridge</td>
+                                    <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/anglo-saxon-norse-and-celtic">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>Archaeology</b></td>
+                                      <td style="text-align: center">£23,340</td>
+                                      <td style="text-align: center">Math AA, 40-42 points IB, with 776 at HL</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/archaeology">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>Architecture</b></td>
+                                      <td style="text-align: center">£30,537</td>
+                                      <td style="text-align: center">AS or A Level/IB HL Math or Physics; IB HL in an essay-based subject</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/architecture">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>Asian and Middle Eastern Studies</b></td>
+                                      <td style="text-align: center">£23,340</td>
+                                      <td style="text-align: center">A Level/IB HL in the European language</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/asian-and-middle-eastern-studies">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>Chemical Engineering and Biotechnology</b></td>
+                                      <td style="text-align: center">£35,517</td>
+                                      <td style="text-align: center">A Level/IB HL Mathematics and Chemistry</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/chemical-engineering">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>Classics</b></td>
+                                      <td style="text-align: center">£23,340</td>
+                                      <td style="text-align: center">A Level/IB HL Latin (A Level/IB HL Classical Greek is accepted as a substitute at some Colleges)</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/classics">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>Computer Science</b></td>
+                                      <td style="text-align: center">£35,517</td>
+                                      <td style="text-align: center">40-42 points, with 776 at HL</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/computer-science">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>Economics</b></td>
+                                      <td style="text-align: center">£23,340</td>
+                                      <td style="text-align: center">A Level/IB HL Mathematics</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/economics">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>Education</b></td>
+                                      <td style="text-align: center">£23,340</td>
+                                      <td style="text-align: center">40-42 points, with 776 at HL</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/education">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>Engineering</b></td>
+                                      <td style="text-align: center">£35,517</td>
+                                      <td style="text-align: center">A Level/IB HL Mathematics and Physics</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/engineering">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>English</b></td>
+                                      <td style="text-align: center">£23,340</td>
+                                      <td style="text-align: center">A Level/IB HL English Literature (A Level/IB Higher Level English Literature and Language may be accepted as a substitute at some Colleges).</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/english">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>Geography</b></td>
+                                      <td style="text-align: center">£30,537</td>
+                                      <td style="text-align: center">A Level/IB HL Geography (Optional)</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/geography">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>History</b></td>
+                                      <td style="text-align: center">£23,340</td>
+                                      <td style="text-align: center">40-42 points, with 776 at HL</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/history">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>History and Modern Languages</b></td>
+                                      <td style="text-align: center">£23,340</td>
+                                      <td style="text-align: center">A Level/IB HL in the language (for languages to be studied post-A Level/IB HL)</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/history-and-modern-languages">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>History and Politics</b></td>
+                                      <td style="text-align: center">£23,340</td>
+                                      <td style="text-align: center">40-42 points, with 776 at HL</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/history-and-politics">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>History of Art</b></td>
+                                      <td style="text-align: center">£23,340</td>
+                                      <td style="text-align: center">Art and Design are accepted but Colleges normally require A*/7 in an essay-based subject.</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/history-of-art">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>Human, Social, and Political Sciences</b></td>
+                                      <td style="text-align: center">£23,340</td>
+                                      <td style="text-align: center">40-42 points, with 776 at HL</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/human-social-and-political-sciences">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>Land Economy</b></td>
+                                      <td style="text-align: center">£23,340</td>
+                                      <td style="text-align: center">40-42 points, with 776 at HL</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/land-economy">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>Law</b></td>
+                                      <td style="text-align: center">£23,340</td>
+                                      <td style="text-align: center">40-42 points, with 776 at HL</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/law">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>Linguistics</b></td>
+                                      <td style="text-align: center">£23,340</td>
+                                      <td style="text-align: center">40-42 points, with 776 at HL</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/linguistics">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>Mathematics</b></td>
+                                      <td style="text-align: center">£26,031</td>
+                                      <td style="text-align: center">A Level/IB HL Mathematics, A Level Further Mathematics* (A Level students only), STEP</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/mathematics">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>Medicine</b></td>
+                                      <td style="text-align: center">£60,942</td>
+                                      <td style="text-align: center">IB applicants are expected to take IB HL AA for any course where Mathematics is a requirement.</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/medicine">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>Modern and Medieval Languages</b></td>
+                                      <td style="text-align: center">£23,340</td>
+                                      <td style="text-align: center">A Level/IB HL in at least one of the languages you want to study</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/modern-and-medieval-languages">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>Music</b></td>
+                                      <td style="text-align: center">£30,537</td>
+                                      <td style="text-align: center">A Level/IB HL Music</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/music">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>Natural Sciences</b></td>
+                                      <td style="text-align: center">£35,517</td>
+                                      <td style="text-align: center">A Levels/IB HL in at least two science/mathematics</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/natural-sciences">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>Philosophy</b></td>
+                                      <td style="text-align: center">£23,340</td>
+                                      <td style="text-align: center">40-42 points, with 776 at HL</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/philosophy">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>Psychological and Behavioural Sciences</b></td>
+                                      <td style="text-align: center">£35,517</td>
+                                      <td style="text-align: center">40-42 points, with 776 at HL</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/psychological-and-behavioural-sciences">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>Theology, Religion, and Philosophy of Religion</b></td>
+                                      <td style="text-align: center">£23,340</td>
+                                      <td style="text-align: center">40-42 points, with 776 at HL</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/theology">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                      <td><b>Veterinary Medicine</b></td>
+                                      <td style="text-align: center">£60,942</td>
+                                      <td style="text-align: center">IB applicants are expected to take IB HL 'Analysis and Approaches' for any course where Mathematics is a requirement.</td>
+                                      <td style="text-align: center">Cambridge</td>
+                                      <td style="text-align: center"><a class="availableresources" href="https://www.undergraduate.study.cam.ac.uk/courses/veterinary-medicine">Available Resources</a></td>
+                                  </tr>
+                                  <tr class="subject">
+                                    <td><b>MA Accounting and Business</b></td>
+                                    <td style="text-align: center">£23,100</td>
+                                    <td style="text-align: center">34 points with 655 at HL (min)</td>
+                                    <td style="text-align: center">Edinburgh</td>
+                                    <td style="text-align: center"><a class="availableresources" href="https://www.ed.ac.uk/studying/undergraduate/degrees/index.php?action=programme&code=NN14">Available Resources</a></td>
+                                </tr>
+                                <tr class="subject">
+                                    <td><b>MA Accounting and Finance</b></td>
+                                    <td style="text-align: center">£23,100</td>
+                                    <td style="text-align: center">34 points with 655 at HL (min)</td>
+                                    <td style="text-align: center">Edinburgh</td>
+                                    <td style="text-align: center"><a class="availableresources" href="https://www.ed.ac.uk/studying/undergraduate/degrees/index.php?action=programme&code=NN43">Available Resources</a></td>
+                                </tr>
+                                <tr class="subject">
+                                    <td><b>BSc Acoustics and Music Technology</b></td>
+                                    <td style="text-align: center">£30,400</td>
+                                    <td style="text-align: center">34 points with 655 at HL (min)</td>
+                                    <td style="text-align: center">Edinburgh</td>
+                                    <td style="text-align: center"><a class="availableresources" href="https://www.ed.ac.uk/studying/undergraduate/degrees/index.php?action=programme&code=W380">Available Resources</a></td>
+                                </tr>
+                                <tr class="subject">
+                                    <td><b>BSc Anatomy and Development</b></td>
+                                    <td style="text-align: center">£30,400</td>
+                                    <td style="text-align: center">32 points with 655 at HL (min)</td>
+                                    <td style="text-align: center">Edinburgh</td>
+                                    <td style="text-align: center"><a class="availableresources" href="https://www.ed.ac.uk/studying/undergraduate/degrees/index.php?action=programme&code=C183">Available Resources</a></td>
+                                </tr>
+                                <tr class="subject">
+                                    <td><b>MA Ancient and Medieval History</b></td>
+                                    <td style="text-align: center">£23,100</td>
+                                    <td style="text-align: center">34 points with 655 at HL (min)</td>
+                                    <td style="text-align: center">Edinburgh</td>
+                                    <td style="text-align: center"><a class="availableresources" href="https://www.ed.ac.uk/studying/undergraduate/degrees/index.php?action=programme&code=V190">Available Resources</a></td>
+                                </tr>
+                                <tr class="subject">
+                                    <td><b>MA Ancient History</b></td>
+                                    <td style="text-align: center">£23,100</td>
+                                    <td style="text-align: center">34 points with 655 at HL (min)</td>
+                                    <td style="text-align: center">Edinburgh</td>
+                                    <td style="text-align: center"><a class="availableresources" href="https://www.ed.ac.uk/studying/undergraduate/degrees/index.php?action=programme&code=V110">Available Resources</a></td>
+                                </tr>
+                                <tr class="subject">
+                                    <td><b>MA Ancient History and Greek</b></td>
+                                    <td style="text-align: center">£23,100</td>
+                                    <td style="text-align: center">34 points with 655 at HL (min)</td>
+                                    <td style="text-align: center">Edinburgh</td>
+                                    <td style="text-align: center"><a class="availableresources" href="https://www.ed.ac.uk/studying/undergraduate/degrees/index.php?action=programme&code=VQ17">Available Resources</a></td>
+                                </tr>
+                                <tr class="subject">
+                                    <td><b>MA Ancient History and Latin</b></td>
+                                    <td style="text-align: center">£23,100</td>
+                                    <td style="text-align: center">34 points with 655 at HL (min)</td>
+                                    <td style="text-align: center">Edinburgh</td>
+                                    <td style="text-align: center"><a class="availableresources" href="https://www.ed.ac.uk/studying/undergraduate/degrees/index.php?action=programme&code=VQ16">Available Resources</a></td>
+                                </tr>
+                                <tr class="subject">
+                                    <td><b>MA Ancient Mediterranean Civilisations</b></td>
+                                    <td style="text-align: center">£23,100</td>
+                                    <td style="text-align: center">34 points with 655 at HL (min)</td>
+                                    <td style="text-align: center">Edinburgh</td>
+                                    <td style="text-align: center"><a class="availableresources" href="https://www.ed.ac.uk/studying/undergraduate/degrees/index.php?action=programme&code=VV41">Available Resources</a></td>
+                                </tr>
+                                <tr class="subject">
+                                    <td><b>BA Animation</b></td>
+                                    <td style="text-align: center">£30,400</td>
+                                    <td style="text-align: center">34 points with 655 at HL (min)</td>
+                                    <td style="text-align: center">Edinburgh</td>
+                                    <td style="text-align: center"><a class="availableresources" href="https://www.ed.ac.uk/studying/undergraduate/degrees/index.php?action=programme&code=W615">Available Resources</a></td>
+                                </tr>
+                                <tr class="subject">
+                                    <td><b>BSc Applied Mathematics</b></td>
+                                    <td style="text-align: center">£23,100</td>
+                                    <td style="text-align: center">32 points with 655 at HL (min)</td>
+                                    <td style="text-align: center">Edinburgh</td>
+                                    <td style="text-align: center"><a class="availableresources" href="https://www.ed.ac.uk/studying/undergraduate/degrees/index.php?action=programme&code=G120">Available Resources</a></td>
+                                </tr>
+                                <tr class="subject">
+                                    <td><b>MMath Applied Mathematics</b></td>
+                                    <td style="text-align: center">£23,100</td>
+                                    <td style="text-align: center">32 points with 655 at HL (min)</td>
+                                    <td style="text-align: center">Edinburgh</td>
+                                    <td style="text-align: center"><a class="availableresources" href="https://www.ed.ac.uk/studying/undergraduate/degrees/index.php?action=programme&code=G121">Available Resources</a></td>
+                                </tr>
+                                <tr class="subject">
+                                    <td><b>BSc Applied Sport Science</b></td>
+                                    <td style="text-align: center">£30,400</td>
+                                    <td style="text-align: center">34 points with 655 at HL (min)</td>
+                                    <td style="text-align: center">Edinburgh</td>
+                                    <td style="text-align: center"><a class="availableresources" href="https://www.ed.ac.uk/studying/undergraduate/degrees/index.php?action=programme&code=C610">Available Resources</a></td>
+                                </tr>
+                                <tr class="subject">
+                                    <td><b>MA Arabic and Ancient Greek</b></td>
+                                    <td style="text-align: center">£23,100</td>
+                                    <td style="text-align: center">34 points with 655 at HL (min)</td>
+                                    <td style="text-align: center">Edinburgh</td>
+                                    <td style="text-align: center"><a class="availableresources" href="https://www.ed.ac.uk/studying/undergraduate/degrees/index.php?action=programme&code=QQK7">Available Resources</a></td>
+                                </tr>
+                                <tr class="subject">
+                                    <td><b>MA Arabic and Business</b></td>
+                                    <td style="text-align: center">£23,100</td>
+                                    <td style="text-align: center">34 points with 655 at HL (min)</td>
+                                    <td style="text-align: center">Edinburgh</td>
+                                    <td style="text-align: center"><a class="availableresources" href="https://www.ed.ac.uk/studying/undergraduate/degrees/index.php?action=programme&code=TN61">Available Resources</a></td>
+                                </tr>
+              
+              
+                            </table>
+                            
+                          </div>
+                    </ol>
+                </div>
+
+
+        </body>
+
+</html>
+    

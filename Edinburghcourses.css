@@ -1,0 +1,49 @@
+.homebutton {
+    padding: 100px 50px;
+    cursor: pointer;
+    color: white;
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+
+body {
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+table, th, td {
+    border:1px solid rgb(255, 255, 255);
+}
+
+
+.Edinburgh {
+    font-size: 50px;
+    display:flex;
+    justify-content:center;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 5%;
+}
+
+
+.availableresources {
+    color:rgb(34, 190, 17);
+    text-decoration: none;
+    font-weight: 900;
+}
+
+
+.unavailableresources {
+    color:rgb(255, 0, 0);
+    text-decoration: none;
+}
+
+
+.disclaimer {
+    color:rgb(255,255,255);
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    display:flex;
+    justify-content:center;
+}
