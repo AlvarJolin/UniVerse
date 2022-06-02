@@ -42,8 +42,8 @@
 .othersearchbutton {
     margin-top: 1%;
     background-color:goldenrod;
-    height: 27px;
-    width: 12%;
+    height: 25px;
+    width: 25%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -58,6 +58,8 @@
     border-bottom-right-radius: 5px;
     margin-bottom: 2%;
     cursor:pointer;
+    text-decoration: none;
+    text-color: white;
 }
 
 .container {
