@@ -43,15 +43,15 @@
 
     .othersearchbutton {
         margin-top: 1%;
-        background-color:aqua;
+        background-color:goldenrod;
         height: 27px;
-        width: 30%;
+        width: 40%;
         display: flex;
         justify-content: center;
         text-align: center;
         align-items: center;
         font-family: 'Open Sans', sans-serif;
-        font-weight:700;
+        font-weight:600;
         border: none;
         font-size: 15px;
         border-top-left-radius: 5px;
